@@ -1,0 +1,39 @@
+1. Implement a simple GA with fitness-proportionate selection, roulettewheel sampling, population size
+100, single-point crossover rate pc = 0.7, and bitwise mutation rate pm = 0.001. Try it on the
+following fitness function: ƒ(x) = number of ones in x, where x is a chromosome of length 20.
+Perform 20 runs, and measure the average generation at which the string of all ones is discovered.
+Perform the same experiment with crossover turned off (i.e., pc = 0). Do similar experiments, varying
+the mutation and crossover rates, to see how the variations affect the average time required for the GA
+to find the optimal string. If it turns out that mutation with crossover is better than mutation alone,
+why is that the case?
+
+2. Implement a simple GA with fitness-proportionate selection, roulettewheel sampling, population size
+100, single-point crossover rate pc = 0.7, and bitwise mutation rate pm = 0.001. Try it on the fitness
+function ƒ(x) = the integer represented by the binary number x, where x is a chromosome of length 20.
+Run the GA for 100 generations and plot the fitness of the best individual found at each generation as
+well as the average fitness of the population at each generation. How do these plots change as you
+vary the population size, the crossover rate, and the mutation rate? What if you use only mutation
+(i.e., pc = 0)?
+
+3. Define ten schemas that are of particular interest for the fitness functions of computer exercises 1 and
+2 (e.g., 1*···* and 0*···*). When running the GA as in computer exercises 1 and 2, record at each
+generation how many instances there are in the population of each of these schemas. How well do the
+data agree with the predictions of the Schema Theorem?
+
+4. Compare the GA's performance on the fitness functions of computer exercises 1 and 2 with that of
+steepest-ascent hill climbing (defined above) and with that of another simple hill-climbing method,
+"random-mutation hill climbing" (Forrest and Mitchell 1993b):
+   1. Start with a single randomly generated string. Calculate its fitness.
+   2. Randomly mutate one locus of the current string.
+   3. If the fitness of the mutated string is equal to or higher than the fitness of the original string,
+keep the mutated string. Otherwise keep the original string.
+   4. Go to step 2.
+
+Iterate this algorithm for 10,000 steps (fitness-function evaluations). This is equal to the
+number of fitness-function evaluations performed by the GA in computer exercise 2 (with
+population size 100 run for 100 generations). Plot the best fitness found so far at every 100
+evaluation steps (equivalent to one GA generation), averaged over 10 runs. Compare this with
+a plot of the GA's best fitness found so far as a function of generation. Which algorithm finds
+higher-fitness chromosomes? Which algorithm finds them faster? Comparisons like these are
+important if claims are to be made that a GA is a more effective search algorithm than other
+stochastic methods on a given problem.

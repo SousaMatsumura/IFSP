@@ -1,0 +1,6 @@
+Geração 32502
+Fitness: 1048575
+Geração 19988
+Fitness: 1048575
+Geração 14514 - Fitness: 1048575
+Geração 21026 - Fitness: 1048575

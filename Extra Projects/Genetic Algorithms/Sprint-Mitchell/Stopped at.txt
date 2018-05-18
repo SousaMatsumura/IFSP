@@ -1,0 +1,154 @@
+The_Complete_Guide_To_Setting_Up_Your_Diet_v2.3.4:
+Stopped at: Step "5. Adjust energy intake"
+
+Genetic Algorithms: 
+Stopped at: Pag. 35 =>
+
+
+Page 3:
+
+- Genetic Algorthms => "Algoritmos Genéticos":Os algoritmos genéticos (GAs)
+foram inventados por John Holland e colaboradores na década de 1960. O
+objetivo original de Holland era estudar formalmente o fenômeno da
+adaptação, tal como ocorre na natureza e desenvolver maneiras pelas quais
+os mecanismos de adaptação natural podem ser importados em sistemas
+computacionais.
+A obra Adaptation in Natural and Artificial Systems (Holland, 1975) apresentou
+o algoritmo genético como uma abstração da evolução biológica e forneceu uma
+estrutura teórica para a adaptação da evolução no GA. O método consiste em se
+deslocar uma população de "cromossomos" (por exemplo, vetores unidimencionais
+de bits) para uma nova população usando um tipo de "seleção natural" inspirada
+nos operadores genéticos de cruzamento, mutação e inversão. Cada cromossoma
+consiste em "genes" (por exemplo, bits), sendo cada gene uma instância de um
+"alelo" particular.
+
+Alelo => É a representação (classe) de uma característica individual, pode ser
+binária (ter dois estados) ou mais (como por exemplo a cor do cabelo ou dos olhos,
+que variam muito de um indvíduo para outro);
+
+
+Page 5:
+
+- Search Space => "Espaço de Busca": É o "espaço de busca" que contém uma
+coleção de soluções candidatas a uma solução desejada.
+
+- Fitness Landscape => "Paisagem de aptidão": No contexto de genética 
+populacional, a "paisagem de aptidão" é a representação do espaço de todos
+os genotipos possíveis juntamente com suas aptidões (Sewell Wright, 1931).
+
+- Hamming Distance => "Distancia entre duas soluções": É o número de
+locais em que os bits correspondentes diferem.
+
+*Dúvidas => (l + 1 ?) : A fitness landscape can be pictured as an (l + 1)-
+dimensional plot in which each genotype is a point in l dimensions and its
+fitness is plotted along the (l + 1)st axis. A simple landscape for l = 2
+is shown in figure 1.1.
+
+Page 6:
+
+- Genetic Algorithms => Todos os Algoritmos Genéticos possuem: população de
+cromossomos, seleção de acordo com a aptidão, cruzamento para produção de
+novos descendentes, e mutações randômicas dos novos descentes.
+
+
+Page 8:
+
+- Pc and Pm => Probabilidade de cruzamento(crossover) e mutação,
+respectivamente.
+
+- Fitness-Proportionate Selection => Seleção Proporcional à Aptidão: Método
+no qual o número de vezes que um indivíduo deve reproduzir é proporcional ao
+valor de sua aptidão dividida pela média de aptidão da população.
+
+Page 9:
+
+- Search => Existem 3 tipos de busca: busca por dados armazenados, busca de
+caminhos para objetivos, e busca por soluções.
+
+- Search for Stored Data => Busca por dados armazenados: Neste caso o 
+problema é encontrar dados armazenados em certa ordem na memoria de um
+computador, a busca binária é um dos metódos para resolver de forma 
+eficiente este problema.
+
+- Search for Paths to Goals => busca de caminhos para objetivos: Neste tipo
+de busca o problema é encontrar um conjunto de ações que vai transitar de um
+dado estado inicial à um dado estado desejado, este tipo de busca é central
+para muitas abordagens de Inteligência Artificial.
+
+Page 10:
+
+- Search for Solutions => Busca por Soluções: Neste tipo de busca a ideia é
+encontrar de forma eficiente uma solução dentre um amplo espaço de candidatos
+a solução.
+
+Page 18:
+
+*Dúvidas => Two-Dimensional Lattice.
+
+Page 19:
+
+- Heterozygous Position => Posição Heterozigótica: São posições em pares de
+cromossomos diplóides em que os codões são diferentes e por isso há perdas
+da informação genética de um dos codões durante o cruzamento de formação de 
+gametas.
+
+- Homozygous Position => Posição Homozigótica: São posições em pares de
+cromossomos diplóides em que os codões são iguais e por isso as informações
+genéticas de ambos os codões são mantidas durante o cruzamento de formação
+de gametas.
+
+- Lattice => Em matemática, especialmente na teoria da ordem e em álgebra,
+um reticulado é uma estrutura L = tal que L é parcialmente ordenado por R e
+para cada dois elementos a, b de L existe supremo e ínfimo de {a, b}.
+
+Page 20:
+*Dúvudas => Note that not every possible subset of the set of length-l bit
+strings can be described as a schema; in fact, the huge majority cannot.
+There are 2^l possible bit strings of length l, and thus 2^(2*l) possible 
+subsets of strings, but there are only 3l possible schemas.
+
+Page 22:
+
+!Thought Exercises:
+   1. How many Prisoner's Dilemma strategies with a memory
+of three games are there that are  behaviorally equivalent
+to TIT FOR TAT? What fraction is this of the total number 
+of strategies with a memory of three games?
+Answer:
+
+Page 34:
+- Coordinated Global Information Processing => Insect colonies, economic
+systems, the immune system, and the brain have all been cited as examples of
+systems in which such emergent computation occurs (Forrest 1990; Langton
+1992). However, it is not well understood how these natural systems perform
+computations. Another goal is to find ways to engineer sophisticated
+emergent computation in decentralized multi-processor systems, using ideas
+from how natural decentralized systems compute.
+
+- Lattice => Used again and becoming more important.
+
+Page 35:
+
+*Dúvidas => "The CA illustrated in figure 2.5, like all those I will discuss
+here, has periodic boundary conditions: si = si + N." Isso quer dizer que as
+condições de limite a cada iteração são si = si + N? Se for isso, eu havia
+entendido que si é um array s com posições i, e N é a quantidade de células
+no array, sendo N = 11, si = si + N => s[i] = s[i] + 11. Isso me é estranho.
+
+- Celular Automata => "CA: Cellular automata have been studied extensively 
+as mathematical objects, as models of natural systems, and as architectures
+for fast, reliable parallel computation. (For overviews of CA theory and
+applications, see Toffoli and Margolus 1987 and Wolfram 1986.)."
+
+Page 36: 
+
+*Dúvidas => "Designing an algorithm to perform the Pc = 1/2 task is trivial for a
+system with a central controller or central storage of some kind, such as a
+standard computer with a counter register or a neural network in which all
+input units are connected to a central hidden unit. However, the task is
+nontrivial for a small-radius (r << N) CA, since a small-radius CA relies
+only on local interactions mediated by the cell neighborhoods." Não entendi
+muito bem o significado de Pc (Performance crítica?), mas tenho uma ideia do
+que seja. No entanto, neste trecho o que não ficou claro é a noção de o que
+faz esta tarefa ser trivial ou não. Será que se o radius >= N é trivial e se
+radius < N é não trivial?

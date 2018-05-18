@@ -1,0 +1,6 @@
+Geração 1939
+Fitness: 20
+Geração 12372
+Fitness: 20
+Geração 13306 - Fitness: 20
+Geração 3146 - Fitness: 20
