@@ -1,0 +1,36 @@
+en
+configure terminal
+interface Fa0/0
+ip address 201.49.132.1 255.255.255.0
+no shutdown
+exit
+interface Fa1/0
+ip address 159.195.136.1 255.255.255.0
+no shutdown
+exit
+interface Fa2/0
+ip address 10.0.115.225 255.255.255.240
+no shutdown
+exit
+interface Fa3/0
+ip address 76.0.0.1 255.0.0.0
+no shutdown
+exit
+line console 0
+password cisco
+login
+exit
+line vty 04
+password cisco
+login
+exit
+enable password cisco
+enable secret Pia
+service password-encryption
+exit
+copy running-config startup-config
+
+copy running-config tftp
+201.49.132.1
+backup
+
